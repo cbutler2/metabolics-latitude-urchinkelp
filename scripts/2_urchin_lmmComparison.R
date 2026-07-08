@@ -25,7 +25,7 @@ theme_format <-
 # LMM for difference in resp between species ------------------------------------------
 
 ## load helio data
-helio.rates <- readRDS("data/prepared/helio_rates.rds")
+helio.rates <- readRDS("data/helio_rates.rds")
 
 helio.rates <- helio.rates %>% 
   filter(Contents == 'urchin',
@@ -44,7 +44,7 @@ helio.rates <- helio.rates %>%
                               site == 'Fortescue' ~ -43.125))
 
 ## load centro data
-centro.rates <- readRDS("data/prepared/centro_rates.rds")
+centro.rates <- readRDS("data/centro_rates.rds")
 
 centro.rates <- centro.rates %>% 
   filter(Contents == 'urchin',
