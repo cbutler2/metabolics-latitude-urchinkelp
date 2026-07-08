@@ -28,7 +28,7 @@ palette <- c("#a50f15", "#f16813", "#fde43a", "#6baed6", "#2171b5", "#08306b")
 # read in data ------------------------------------------------------------
 
 
-eck.rates <- readRDS("data/prepared/ecklonia_rates.rds")
+eck.rates <- readRDS("data/ecklonia_rates.rds")
 eck.rates <- eck.rates %>% 
   filter(Contents == 'kelp') %>% 
   droplevels()
