@@ -29,7 +29,7 @@ palette <- c("#a50f15", "#f16813", "#fde43a", "#6baed6", "#2171b5", "#08306b")
 # Centros ------------------------------------------------------------
 
 
-centro.rates <- readRDS("data/prepared/centro_rates.rds")
+centro.rates <- readRDS("data/centro_rates.rds")
 
 centro.rates <- centro.rates %>% 
   filter(Contents == 'urchin',
@@ -161,7 +161,7 @@ plot(emm_centro, comparisons = TRUE) # if arrows overlap, there is no difference
 
 # Helios ------------------------------------------------------------------
 
-helio.rates <- readRDS("data/prepared/helio_rates.rds")
+helio.rates <- readRDS("data/helio_rates.rds")
 
 helio.rates <- helio.rates %>% 
   filter(Contents == 'urchin',
